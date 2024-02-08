@@ -10,18 +10,29 @@ public class Character {
     private String weapon;
     private String Occupation;
 
+    private String theme;
+
     //Constructor
-    public Character(String gender, String age, String bodyType, String hair, String clothes, String weapon, String occupation) {
+    public Character(String gender, String age, String bodyType, String hair, String clothes, String weapon, String occupation,String theme) {
         this.gender = gender;
         this.age = age;
         this.bodyType = bodyType;
         this.hair = hair;
         this.clothes = clothes;
         this.weapon = weapon;
-        Occupation = occupation;
+        this.Occupation = occupation;
+        this.theme = theme;
     }
 
+
+
     //Getters and Setters
+
+
+    public String getTheme() {
+        return theme;
+    }
+
     public String getGender() {
         return gender;
     }
